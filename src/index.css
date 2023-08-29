@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #fff;
+}
+
+.dark{
+  background-color: #161625;
+  color: #9a97f3;
+}
+
+.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6{
+  color: #818cab;
+}
