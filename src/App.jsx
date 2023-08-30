@@ -20,9 +20,9 @@ function App() {
             </div>
             <div className="lg:w-1/2 text-4xl font-bold text-center flex justify-center items-center flex-col mt-16 ">
               <div className={`${isDarkMode ? "" : "text-slate-900"} mr-20 mb-8 stroke-2 stroke-black flex justify-center items-center flex-col text-center translate-x-8`}>
-                <Typed strings={["Hi, My Name Is Nicolas Sanjaya"]} typeSpeed={50} backSpeed={70} loop />
+                <Typed strings={["Nicolas Sanjaya"]} typeSpeed={50} backSpeed={70} loop />
                 <h4>
-                  Im <span className="text-5xl bg-clip-text text-transparent bg-gradient-to-r from-slate-100 to-slate-400 ">Front End Web Developer</span>
+                  <span className="text-5xl bg-clip-text text-transparent bg-gradient-to-r from-slate-100 to-slate-400 ">Front End Web Developer</span>
                 </h4>
                 <button className={`${isDarkMode ? "text-white" : "text-slate-800"} px-12 py-6 border-4 border-blue-500 mt-8 rounded-md text-2xl font-semibold  hover:text-white animate-bounce`}>
                   <Link to="/project">See Project</Link>
@@ -33,7 +33,7 @@ function App() {
         </div>
       </div>
       <div className="flex justify-center my-0">
-        <h4 className="font-semibold text-lg bg-clip-text text-transparent bg-gradient-to-r from-violet-500 to-fuchsia-500">
+        <h4 className="font-semibold text-lg bg-clip-text text-transparent bg-gradient-to-r from-violet-500 to-fuchsia-500 text-center">
           Made With{" "}
           <span className="text-sky-500 hover:cursor-pointer">
             <Link to="/">Tailwind CSS</Link>
@@ -42,7 +42,7 @@ function App() {
           <span className="text-blue-500 hover:cursor-pointer">
             <Link to="/">React JS</Link>
           </span>{" "}
-          using Vite
+          using <span className="text-fuchsia-500">Vite</span>
         </h4>
       </div>
     </div>

@@ -18,7 +18,7 @@ const Projects = () => {
           </div>
           <div className="md:w-1/2 lg:w-1/3 h-fit">
             <motion.div initial={{ opacity: 0, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5, delay: 0.1 }}>
-              <Card title="E-Commerce" desc="Making ui components for product and integrated with dynamic routing uisng next-js" />
+              <Card title="E-Commerce" desc="Making ui components for product and integrated with dynamic routing using next-js" />
             </motion.div>
           </div>
           <div className="lg:w-1/3 h-fit">
