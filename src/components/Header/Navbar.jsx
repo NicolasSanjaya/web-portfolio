@@ -43,19 +43,29 @@ const Navbar = () => {
         <div className="hidden md:block">
           <ul className="flex text-white">
             <li className="mx-6 hover:border-b-2 text-xl">
-              <Link to="/" className=" focus:text-slate-800 focus:border-b-2 focus:border-slate-600 focus:hover:border-none">Home</Link>
+              <Link to="/" className={`focus:hover:border-none ${isDarkMode ? "focus:text-slate-400 focus:border-b-2 focus:border-slate-400" : "focus:text-slate-600 focus:border-b-2 focus:border-slate-600"}`}>
+                Home
+              </Link>
             </li>
             <li className="mx-6 hover:border-b-2 text-xl">
-              <Link to="/about" className=" focus:text-slate-800 focus:border-b-2 focus:border-slate-600 focus:hover:border-none">About</Link>
+              <Link to="/about" className={`focus:hover:border-none ${isDarkMode ? "focus:text-slate-400 focus:border-b-2 focus:border-slate-400" : "focus:text-slate-600 focus:border-b-2 focus:border-slate-600"}`}>
+                About
+              </Link>
             </li>
             <li className="mx-6 hover:border-b-2 text-xl">
-              <Link to="/skills" className=" focus:text-slate-800 focus:border-b-2 focus:border-slate-600 focus:hover:border-none">Skills</Link>
+              <Link to="/skills" className={`focus:hover:border-none ${isDarkMode ? "focus:text-slate-400 focus:border-b-2 focus:border-slate-400" : "focus:text-slate-600 focus:border-b-2 focus:border-slate-600"}`}>
+                Skills
+              </Link>
             </li>
             <li className="mx-6 hover:border-b-2 text-xl">
-              <Link to="/project" className=" focus:text-slate-800 focus:border-b-2 focus:border-slate-600 focus:hover:border-none">Projects</Link>
+              <Link to="/project" className={`focus:hover:border-none ${isDarkMode ? "focus:text-slate-400 focus:border-b-2 focus:border-slate-400" : "focus:text-slate-600 focus:border-b-2 focus:border-slate-600"}`}>
+                Projects
+              </Link>
             </li>
             <li className="mx-6 hover:border-b-2 text-xl">
-              <Link to="/contact" className=" focus:text-slate-800 focus:border-b-2 focus:border-slate-600 focus:hover:border-none">Contact</Link>
+              <Link to="/contact" className={`focus:hover:border-none ${isDarkMode ? "focus:text-slate-400 focus:border-b-2 focus:border-slate-400" : "focus:text-slate-600 focus:border-b-2 focus:border-slate-600"}`}>
+                Contact
+              </Link>
             </li>
           </ul>
         </div>
@@ -80,27 +90,27 @@ const Navbar = () => {
         <div className={`w-48 h-30 bg-blue-600 fixed right-0 flex justify-center md:hidden mt-24 z-50 navbar rounded-b-md`} ref={menuRef}>
           <ul className="flex text-white flex-col w-full px-4">
             <li className="my-4 hover:underline text-xl text-center ">
-              <Link to="/" onClick={() => setNav(!nav)}>
+              <Link to="/" onClick={() => setNav(!nav)} className={`focus:hover:border-none ${isDarkMode ? "focus:text-slate-400 focus:border-b-2 focus:border-slate-400" : "focus:text-slate-600 focus:border-b-2 focus:border-slate-600"}`}>
                 Home
               </Link>
             </li>
             <li className="my-4 hover:underline text-xl text-center">
-              <Link to="/about" onClick={() => setNav(!nav)}>
+              <Link to="/about" onClick={() => setNav(!nav)} className={`focus:hover:border-none ${isDarkMode ? "focus:text-slate-400 focus:border-b-2 focus:border-slate-400" : "focus:text-slate-600 focus:border-b-2 focus:border-slate-600"}`}>
                 About
               </Link>
             </li>
             <li className="my-4 hover:underline text-xl text-center">
-              <Link to="/skills" onClick={() => setNav(!nav)}>
+              <Link to="/skills" onClick={() => setNav(!nav)} className={`focus:hover:border-none ${isDarkMode ? "focus:text-slate-400 focus:border-b-2 focus:border-slate-400" : "focus:text-slate-600 focus:border-b-2 focus:border-slate-600"}`}>
                 Skills
               </Link>
             </li>
             <li className="my-4 hover:underline text-xl text-center">
-              <Link to="/project" onClick={() => setNav(!nav)}>
+              <Link to="/project" onClick={() => setNav(!nav)} className={`focus:hover:border-none ${isDarkMode ? "focus:text-slate-400 focus:border-b-2 focus:border-slate-400" : "focus:text-slate-600 focus:border-b-2 focus:border-slate-600"}`}>
                 Projects
               </Link>
             </li>
             <li className="my-4 hover:underline text-xl text-center">
-              <Link to="/contact" onClick={() => setNav(!nav)}>
+              <Link to="/contact" onClick={() => setNav(!nav)} className={`focus:hover:border-none ${isDarkMode ? "focus:text-slate-400 focus:border-b-2 focus:border-slate-400" : "focus:text-slate-600 focus:border-b-2 focus:border-slate-600"}`}>
                 Contact
               </Link>
             </li>
