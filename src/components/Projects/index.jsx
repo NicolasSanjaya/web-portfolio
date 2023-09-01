@@ -14,7 +14,7 @@ const Projects = () => {
         <div className="flex flex-wrap mt-12">
           <div className="md:w-1/2 lg:w-1/3 h-fit">
             <motion.div initial={{ opacity: 0, scale: 0.5, x: "-100%" }} animate={{ opacity: 1, scale: 1, x: 0 }} transition={{ duration: 0.5, delay: 0.1 }}>
-              <Card title="Movie App" desc="Making modern ui for movie app using public api" link="https://movie-app-next-5ea3vmcxw-nicolassanjaya.vercel.app/" img={movie} />
+              <Card title="Movie App" desc="Making modern ui for movie app using public api" link="https://movie-app-next-5ea3vmcxw-nicolassanjaya.vercel.app/" img={movie} tech="Next JS, Redux Toolkit, Tailwind CSS"/>
             </motion.div>
           </div>
           <div className="md:w-1/2 lg:w-1/3 h-fit">
