@@ -3,6 +3,7 @@ import wa from "../../assets/images/wa.png";
 import fb from "../../assets/images/fb.png";
 import ig from "../../assets/images/ig.png";
 import linkedin from "../../assets/images/linkedin.png";
+import github from "../../assets/images/github.png";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { DarkModeContext } from "../DarkMode/DarkMode";
@@ -15,6 +16,13 @@ const Contact = () => {
         <h1 className="text-center font-bold text-4xl">Get In Touch</h1>
 
         <div className="flex flex-wrap mt-12 p-12 items-center justify-evenly">
+          <div className="w-40 mb-8 mx-8">
+            <button>
+              <Link to="https://github.com/NicolasSanjaya" target="_blank">
+                <img src={github} alt="Github" className="drop-shadow-md hover:-translate-y-4 transition-all" />
+              </Link>
+            </button>
+          </div>
           <div className="w-40 mb-8">
             <button>
               <Link to="https://wa.me/6281282778619" target="_blank">

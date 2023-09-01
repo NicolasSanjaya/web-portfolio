@@ -1,5 +1,5 @@
 import Typed from "react-typed";
-import profile from "./assets/images/profile.png";
+import profile2 from "./assets/images/profile2.png";
 import { Link } from "react-router-dom";
 import { useEffect, useContext } from "react";
 import { DarkModeContext } from "./components/DarkMode/DarkMode";
@@ -13,10 +13,10 @@ function App() {
   return (
     <div className={`min-h-screen md:h-full flex flex-col justify-between home ${isDarkMode ? "dark" : ""}`}>
       <div className={`h-3/4 bg-gradient-to-r ${isDarkMode ? "from-violet-800 to-fuchsia-900" : "from-violet-500 to-fuchsia-500"}`}>
-        <div className="pt-6">
+        <div className="pt-6 px-20">
           <div className="mt-28 flex flex-wrap justify-center">
-            <div className="lg:w-1/2">
-              <img src={profile} alt="" />
+            <div className="lg:w-1/2 mb-12">
+              <img src={profile2} alt="" width={400} className="rounded-full" />
             </div>
             <div className="lg:w-1/2 text-4xl font-bold text-center flex justify-center items-center flex-col mt-16 ">
               <div className={`${isDarkMode ? "" : "text-slate-900"} mr-20 mb-8 stroke-2 stroke-black flex justify-center items-center flex-col text-center translate-x-8`}>

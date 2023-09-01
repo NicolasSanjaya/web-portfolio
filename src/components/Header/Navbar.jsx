@@ -2,9 +2,9 @@ import React, { useEffect, useState, useRef, useContext } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 import { Link } from "react-router-dom";
-import linkedin from "../../assets/images/linkedin.png";
 import { motion } from "framer-motion";
 import { DarkModeContext } from "../DarkMode/DarkMode";
+import github from '../../assets/images/github.png'
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -118,10 +118,10 @@ const Navbar = () => {
         </div>
       )}
       <div className="fixed bottom-32 right-9 flex justify-center items-center z-50 translate-x-1">{/* <DarkMode /> */}</div>
-      <div className="bg-blue-500 rounded-full w-20 h-20 fixed bottom-6 right-6 flex justify-center items-center z-50 animate-pulse">
+      <div className="bg-slate-200 rounded-full w-20 h-20 fixed bottom-6 right-6 flex justify-center items-center z-50 animate-pulse">
         <button>
           <Link to="https://www.linkedin.com/in/nicolassanjaya" target="_blank">
-            <img src={linkedin} alt="Linked In" className="rounded-full" />
+            <img src={github} alt="Linked In" className="rounded-full" />
           </Link>
         </button>
       </div>
