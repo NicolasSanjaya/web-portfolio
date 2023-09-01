@@ -120,7 +120,7 @@ const Navbar = () => {
       <div className="fixed bottom-32 right-9 flex justify-center items-center z-50 translate-x-1">{/* <DarkMode /> */}</div>
       <div className="bg-slate-200 rounded-full w-20 h-20 fixed bottom-6 right-6 flex justify-center items-center z-50 animate-pulse">
         <button>
-          <Link to="https://www.linkedin.com/in/nicolassanjaya" target="_blank">
+          <Link to="https://github.com/NicolasSanjaya" target="_blank">
             <img src={github} alt="Linked In" className="rounded-full" />
           </Link>
         </button>
